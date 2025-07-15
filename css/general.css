@@ -27,11 +27,22 @@ body {
     max-width: 144rem;
 }
 
+.center--div {
+    margin: 0 auto;
+}
+
 .heading--secondary {
     font-family: "Oranienbaum", serif;
-    font-size: 6.4rem;
+    font-size: 5.4rem;
     font-weight: 400;
     line-height: 1.2;
+}
+
+.heading--tertiary {
+    font-family: "Oranienbaum", serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-transform: capitalize;
 }
 
 .btn {
@@ -41,6 +52,36 @@ body {
     text-transform: uppercase;
     font-size: 1.4rem;
     cursor: pointer;
-    /* border-radius: 5px; */
-    /* border: none; */
+}
+
+.title {
+    color: #BD7655;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+.description {
+    font-size: 1.6rem;
+    color: #575351;
+    width: 66rem;
+    line-height: 1.6;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 3rem;
+}
+
+.grid--cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--cols-4 {
+    grid-template-columns: repeat(4, 1fr);
 }
