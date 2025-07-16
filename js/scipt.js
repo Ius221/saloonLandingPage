@@ -24,6 +24,7 @@ const changeHero = function (num) {
 parentNavBtn.addEventListener('click', function (e) {
     if (!e.target.classList.contains('hero--nav-btn')) return;
     const currImg = Number.parseInt(e.target.getAttribute('data-tag')) - 1;
+    i = currImg;
     changeHero(currImg);
 })
 

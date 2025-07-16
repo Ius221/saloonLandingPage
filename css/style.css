@@ -259,7 +259,7 @@ ul {
 /* GOODWILL SECTION */
 /*******************/
 .good-section {
-    margin: 7rem auto 10rem auto;
+    margin: 9.6rem auto 12.8rem auto;
 }
 
 .good-image-container {
@@ -325,6 +325,77 @@ ul {
     border-color: #BD7655;
 }
 
-/*********************/
-/* GOODWILL SECTION */
-/*******************/
+/******************/
+/* PROUD SECTION */
+/****************/
+.proud-section {
+    margin: 9.6rem auto 12.8rem auto !important
+}
+
+.proud-title {
+    margin: 1.2rem auto 6.4rem auto;
+}
+
+.proud--image {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.individual-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.individual-card img {
+    position: absolute;
+    height: 40rem;
+    left: -35%;
+    justify-content: center;
+}
+
+.proud-img-container {
+    height: 40rem;
+    background-color: #000;
+    width: 27rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#left-0-img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.proud-link {
+    cursor: pointer;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+}
+
+.proud-link:hover {
+    color: #000;
+}
+
+.individual-card:nth-child(odd) .proud-img-container {
+    transition: all .6s;
+    border-radius: 60rem 60rem 0 0;
+}
+
+.individual-card:nth-child(even) .proud-img-container {
+    transition: all .6s;
+    border-radius: 0 0 60rem 60rem;
+}
+
+.individual-card:hover .proud-img-container {
+    border-radius: 60rem;
+}
+
+.proud-icon {
+    margin-left: 2px;
+    font-weight: 500;
+}

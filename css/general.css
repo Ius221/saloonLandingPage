@@ -46,6 +46,10 @@ body {
     text-transform: capitalize;
 }
 
+.center--text {
+    text-align: center;
+}
+
 .btn {
     width: fit-content;
     padding: 1.4rem 2.5rem;
