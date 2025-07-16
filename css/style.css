@@ -254,3 +254,77 @@ ul {
     width: 22rem;
     margin: -3rem auto;
 }
+
+/*********************/
+/* GOODWILL SECTION */
+/*******************/
+.good-section {
+    margin: 7rem auto 10rem auto;
+}
+
+.good-image-container {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    border: 1px solid #F6C3AA;
+    width: 63rem;
+    height: 63rem;
+    border-radius: 50%;
+}
+
+.good-image {
+    width: 60rem;
+    height: 60rem;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.good-image img {
+    width: 150%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+}
+
+.good-text {
+    display: flex;
+    width: 50rem;
+    padding-left: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.good-number-container {
+    display: flex;
+    gap: 5rem;
+}
+
+.good-number {
+    font-family: "Oranienbaum", serif;
+    margin-bottom: 1rem;
+    color: #BD7655;
+    font-size: 4.4rem;
+}
+
+.good-number-text {
+    font-size: 1.8rem;
+    color: #575351;
+    font-weight: 500;
+}
+
+.good-btn:hover {
+    color: #eee;
+    background-color: #BD7655;
+    border-color: #BD7655;
+}
+
+/*********************/
+/* GOODWILL SECTION */
+/*******************/

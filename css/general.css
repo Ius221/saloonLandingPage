@@ -16,6 +16,7 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -46,10 +47,12 @@ body {
 }
 
 .btn {
+    width: fit-content;
     padding: 1.4rem 2.5rem;
     font-weight: 600;
     letter-spacing: .05rem;
     text-transform: uppercase;
+    transition: all .3s;
     font-size: 1.4rem;
     cursor: pointer;
 }
