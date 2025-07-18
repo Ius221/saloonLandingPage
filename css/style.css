@@ -454,3 +454,95 @@ ul {
     width: 100%;
     border-radius: 35rem;
 }
+
+/*****************************/
+/* APPOINTMENT FORM SECTION */
+/***************************/
+.appointment-section {
+    background-image: linear-gradient(to top, #FFECEF, #FAF9F7);
+    background-color: #FFECEF;
+    padding: 10rem 0;
+}
+
+.appoint-title h2 {
+    margin: 1.4rem 0 4.4rem 0;
+}
+
+.form-grid {
+    display: grid;
+    gap: 1.4rem;
+}
+
+textarea,
+select,
+option,
+input {
+    font-family: "Montserrat", sans-serif;
+    padding: 1.4rem;
+    font-size: 1.4rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+textarea {
+    grid-column: 1/-1;
+    height: 8rem;
+    resize: none;
+}
+
+.check-box {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    grid-column: 1/-1;
+}
+
+.check-box label {
+    margin-left: .8rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.appoint-btn {
+    margin-top: 4rem;
+    font-weight: 400 !important;
+    border: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.appoint-btn:hover {
+    background-color: #BD7655;
+}
+
+.appointment-image {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.appoint-first-img {
+    border-radius: 30rem 30rem 0 0;
+    position: absolute;
+    width: 53%;
+    overflow: hidden;
+    top: 0%;
+    transition: all .3s;
+    right: 0%;
+}
+
+.appoint-first-img:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.appoint-second-img {
+    position: absolute;
+    transition: all .3s;
+    top: 33%;
+    border-radius: 0 0rem 0 35rem;
+}
+
+.appoint-second-img:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
