@@ -71,6 +71,12 @@ body {
     font-weight: 600;
     letter-spacing: .1rem;
     margin-bottom: 1.8rem;
+    /* color: #; */
+}
+
+.title-head {
+    text-align: center;
+    padding-bottom: 2.4rem;
 }
 
 .description {

@@ -217,21 +217,16 @@ ul {
     padding: 14rem 0 10rem 0;
 }
 
+.services--section .title-head {
+    width: 44rem;
+}
+
 .heading--secondary.service-heading {
     width: 50rem;
-    text-align: center;
 }
 
 .service--img {
     margin-top: 6rem;
-}
-
-.service-content {
-    padding-bottom: 2.4rem;
-}
-
-.service-content .title {
-    margin-bottom: 1.8rem;
 }
 
 .service--img img {
@@ -265,6 +260,14 @@ ul {
 /*******************/
 .good-section {
     margin: 9.6rem auto 12.8rem auto;
+}
+
+.good-content {
+    text-align: start !important;
+}
+
+.good-text .good-content {
+    width: 50rem;
 }
 
 .good-image-container {
@@ -303,7 +306,7 @@ ul {
     padding-left: 5rem;
     flex-direction: column;
     justify-content: center;
-    gap: 3rem;
+    gap: 2.6rem;
 }
 
 .good-number-container {
@@ -314,6 +317,7 @@ ul {
 .good-number {
     font-family: "Oranienbaum", serif;
     margin-bottom: 1rem;
+    text-align: center;
     color: #BD7655;
     font-size: 4.4rem;
 }
@@ -321,6 +325,7 @@ ul {
 .good-number-text {
     font-size: 1.8rem;
     color: #575351;
+    text-align: center;
     font-weight: 500;
 }
 
@@ -335,6 +340,11 @@ ul {
 /****************/
 .proud-section {
     margin: 9.6rem auto 12.8rem auto !important
+}
+
+.proud-section .title-head {
+    width: 40rem;
+    margin-bottom: 6rem;
 }
 
 .proud-title {
@@ -413,9 +423,11 @@ ul {
     margin: 12rem auto !important;
 }
 
-.offer-header {
+.offer-section .title-head {
     grid-column: 1/3;
-    align-content: center;
+    align-self: end;
+    text-align: start;
+    width: 50rem;
 }
 
 .offer-img {
@@ -597,8 +609,41 @@ textarea {
 }
 
 .timing {
-
     margin: 4.4rem 0 1.4rem 0 !important;
+}
+
+.redirect-media {
+    margin-top: 4.2rem;
+    justify-self: center;
+    display: flex;
+    gap: 1.4rem;
+}
+
+.s-media-container {
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition: all .3s;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    /* background-color: ; */
+}
+
+.s-media-container:hover {
+    transform: translateY(-8px);
+    background-color: #BD7655;
+    border-color: #BD7655;
+}
+
+.s-media-container:hover .s-media {
+    filter: invert(1);
+}
+
+.s-media {
+    width: 1.2rem;
 }
 
 .footer-container h3 {
@@ -616,6 +661,7 @@ textarea {
 .footer-copyright span {
     font-weight: 500;
     color: #BD7655;
+    cursor: pointer;
 }
 
 .right-img {
@@ -624,10 +670,12 @@ textarea {
     right: 5%;
     top: 5%;
     position: absolute;
+    z-index: -1;
     transform: rotate(243deg);
 }
 
 .left-img {
+    z-index: -1;
     position: absolute;
     opacity: .1;
     width: 20%;

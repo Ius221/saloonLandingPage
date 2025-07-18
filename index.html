@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./css/general.css">
     <meta charset="UTF-8">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="./js/scipt.js"></script>
@@ -37,7 +40,7 @@
                 <ul class="nav--others">
                     <li class="nav-other">Search</li>
                     <li class="nav-other"><a href="#" class="nav-list other-item">My Account</a></li>
-                    <li><button class="btn icon-btn">
+                    <li><button class="btn icon-btn book-slot">
                             <img src="./assets/icons/calendar.png" alt="calender icon" class="img">
                             <p> Book Now! </p>
                         </button></li>
@@ -48,58 +51,62 @@
 
     <main>
         <section class="hero--section">
-            <div class="hero--container active-hero-container">
-                <div class="hero--img first-img"></div>
-                <div class="hero--content">
-                    <h2 class="heading--secondary hero-title">Lorem ipsum dolor sit amet.</h2>
-                    <p class="hero-desciption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-                        dignissimos repellendus dolore iure impedit praesentium est sapiente reiciendis, veniam magni!
-                    </p>
-                    <button class="btn hero-btn">Order now</button>
+            <!-- Swiper main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="hero--img first-img"></div>
+                        <div class="hero--content">
+                            <h2 class="heading--secondary hero-title">Masterful Chroma Alchemy</h2>
+                            <p class="hero-desciption">Experience bespoke color formulations that harmonize with your
+                                skin's unique undertones, creating living hues that evolve gracefully between visits
+                            </p>
+                            <button class="btn hero-btn">Book now</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero--img second-img"></div>
+                        <div class="hero--content">
+                            <h2 class="heading--secondary hero-title">Curative Scalp Sanctuary</h2>
+                            <p class="hero-desciption">Immerse in therapeutic cleansing ceremonies that detoxify roots,
+                                restore vibrancy, and awaken your hair's natural luminosity through custom botanical
+                                blends
+                            </p>
+                            <button class="btn hero-btn">Book now</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero--img third-img"></div>
+                        <div class="hero--content">
+                            <h2 class="heading--secondary hero-title">Architectural Edge Sculpting</h2>
+                            <p class="hero-desciption">Experience meticulous nail artistry where every contour is
+                                perfected - transforming hands and feet into elegant statements of refined self-care
+                            </p>
+                            <button class="btn hero-btn">Book nows</button>
+                        </div>
+                    </div>
                 </div>
-
-            </div>
-            <div class="hero--container ">
-                <div class="hero--img second-img"></div>
-                <div class="hero--content">
-                    <h2 class="heading--secondary hero-title">elit Molestiae tempore</h2>
-                    <p class="hero-desciption">adipisci rerum, architecto debitis facere consectetur architecto debitis
-                        facere consectetur in quae quo sequi
-                        cumque explicabo numquam doloribus!
-                    </p>
-                    <button class="btn hero-btn">Order now</button>
-                </div>
-
-            </div>
-            <div class="hero--container ">
-                <div class="hero--img third-img"></div>
-                <div class="hero--content">
-                    <h2 class="heading--secondary hero-title">animi illum, nostrum</h2>
-                    <p class="hero-desciption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quas
-                        saepe eius nisi, atque aliquam voluptatem dignissimos repellendus dolore iure impedit
-                        praesentium est sapiente reiciendis, veniam magni!
-                    </p>
-                    <button class="btn hero-btn">Order now</button>
-                </div>
-
-            </div>
-            <div class="hero--nav-btns">
-                <div class="hero--nav-btn active--nav-btn" data-tag="1">&nbsp;</div>
-                <div class="hero--nav-btn" data-tag="2">&nbsp;</div>
-                <div class="hero--nav-btn" data-tag="3">&nbsp;</div>
+                <!--for  pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+                <!-- If we need scrollbar
+                <div class="swiper-scrollbar"></div> -->
             </div>
         </section>
 
         <section class="container services--section text--center center--div">
-            <div class="service-content">
-                <div class="title">Our Services</div>
-                <h2 class="heading--secondary  center--div">Your Satisfaction Is Our Priority</h2>
+            <div class="title-head center--div">
+                <div class="title">WHERE ART MEETS ANATOMY
+                </div>
+                <h2 class="heading--secondary  ">Precision Artistry Cycle </h2>
             </div>
-            <p class="description center--div" style="width: 66rem;">We performs a full spectrum of body contouring,
-                facial plastic surgery,
-                and breast
-                enhancement procedures. We uses many sophisticated, customizable techniques to suit your specific needs
-                and preferences.
+            <p class="description center--div" style="width: 66rem;">We master hair transformation
+                through three pillars: Chroma Alchemy crafts signature colors, Morphology Sculpting shapes
+                bone-flattering silhouettes, and Movement Engineering revolutionizes texture for effortless daily wear.
             </p>
             <div class="service--images grid grid--cols-3">
                 <div class="service--img">
@@ -131,41 +138,48 @@
                 </div>
             </div>
             <div class="good-text">
-                <div class="title">THE BEST STUDIO SINCE 2010 </div>
-                <h2 class="heading--secondary">We Will Change Your Out Looks</h2>
-                <p class=" description " style="width: auto;">Our cosmetology program transitions you from a creative,
-                    willing
-                    learner to a confident, licensed hair professional ready to jump into a career. </p>
+                <div class="title-head good-content">
+                    <div class="title">BEYOND THE CHAIR</div>
+                    <h2 class="heading--secondary  ">Where Identity Meets Craft</h2>
+                </div>
+
+                <p class=" description " style="width: auto;">At Scissor & Style, we don't follow gender rules - we
+                    follow hair biology. Our artists blend technical mastery with deep listening to create looks that
+                    feel authentically you. In a world of quick clips, we choose intentional transformation.
+
+                </p>
                 <div class="good-number-container">
                     <div>
                         <div class="good-number">0+</div>
                         <p class="good-number-text">
-                            Years Experience
+                            Years Mastering Textures
                         </p>
                     </div>
                     <div>
                         <div class="good-number">0</div>
                         <p class="good-number-text">
-                            Happy Clients
+                            Confidence Transformations
                         </p>
                     </div>
                 </div>
-                <button class="btn good-btn">Location & Hours</button>
+                <button class="btn good-btn">Book Session</button>
             </div>
         </section>
 
         <section class="container proud-section center--div">
-            <div class="title center--text">Explore Our Programs</div>
-            <h2 class="heading--secondary  center--text proud-title">We are proud of our service</h2>
+            <div class="title-head good-content center--div ">
+                <div class=" title text--center">YOUR STYLE TOOLKIT</div>
+                <h2 class="heading--secondary text--center ">Precision-Tailored Services</h2>
+            </div>
+
             <div class="proud--image">
                 <div class="individual-card">
                     <div class="proud-img-container">
                         <img src="./assets/proud/coloring.png" alt="Coloring">
                     </div>
-                    <h3 class="heading--tertiary ">coloring</h3>
-                    <p class=" description text--center" style="width: auto;">Augenstein’s approach to cosmetic surgery
-                        and his
-                        philosophy on patient results & satisfaction.
+                    <h3 class="heading--tertiary ">Color Symphony</h3>
+                    <p class=" description text--center" style="width: auto;">Custom color melting, root smudging, and
+                        gloss treatments that grow out gracefully
                     </p>
                     <div class="title proud-link">read more
                         <ion-icon class="proud-icon" name="chevron-forward-outline"></ion-icon>
@@ -175,10 +189,9 @@
                     <div class="proud-img-container">
                         <img src="./assets/proud/curling.png" alt="Coloring" id="left-0-img">
                     </div>
-                    <h3 class="heading--tertiary ">Barbering</h3>
-                    <p class=" description text--center" style="width: auto;">Augenstein’s approach to cosmetic surgery
-                        and his
-                        philosophy on patient results & satisfaction.
+                    <h3 class="heading--tertiary ">Curl Resurrection</h3>
+                    <p class=" description text--center" style="width: auto;">Curl-pattern specialists revitalizing
+                        bounce while fighting frizz
                     </p>
                     <div class="title proud-link">read more
                         <ion-icon class="proud-icon" name="chevron-forward-outline"></ion-icon>
@@ -188,10 +201,9 @@
                     <div class="proud-img-container">
                         <img src="./assets/proud/menBeard.png" alt="Coloring">
                     </div>
-                    <h3 class="heading--tertiary ">Barbering</h3>
-                    <p class=" description text--center" style="width: auto;">Augenstein’s approach to cosmetic surgery
-                        and his
-                        philosophy on patient results & satisfaction.
+                    <h3 class="heading--tertiary ">Beard Sculpting</h3>
+                    <p class=" description text--center" style="width: auto;">Architectural shaping for facial features
+                        - from bold statements to subtle refinement
                     </p>
                     <div class="title proud-link">read more
                         <ion-icon class="proud-icon" name="chevron-forward-outline"></ion-icon>
@@ -201,10 +213,9 @@
                     <div class="proud-img-container">
                         <img src="./assets/proud/menCutting.png" alt="Coloring">
                     </div>
-                    <h3 class="heading--tertiary ">Barbering</h3>
-                    <p class=" description text--center" style="width: auto;">Augenstein’s approach to cosmetic surgery
-                        and his
-                        philosophy on patient results & satisfaction.
+                    <h3 class="heading--tertiary ">Morphology Cuts</h3>
+                    <p class=" description text--center" style="width: auto;">Structural cutting for your face shape and
+                        lifestyle (wash/style included)
                     </p>
                     <div class="title proud-link">read more
                         <ion-icon class="proud-icon" name="chevron-forward-outline"></ion-icon>
@@ -214,10 +225,9 @@
                     <div class="proud-img-container">
                         <img src="./assets/proud/shampoo.png" id="left-0-img" alt="Coloring">
                     </div>
-                    <h3 class="heading--tertiary ">Barbering</h3>
-                    <p class=" description text--center" style="width: auto;">Augenstein’s approach to cosmetic surgery
-                        and his
-                        philosophy on patient results & satisfaction.
+                    <h3 class="heading--tertiary ">Scalp Sanctuary</h3>
+                    <p class=" description text--center" style="width: auto;">Detox rituals and hydrating treatments for
+                        healthier hair foundations
                     </p>
                     <div class="title proud-link">read more
                         <ion-icon class="proud-icon" name="chevron-forward-outline"></ion-icon>
@@ -227,10 +237,9 @@
         </section>
 
         <section class="container grid grid--cols-3 offer-section center--div">
-            <div class="offer-header">
-                <p class="title">who we offer</p>
-                <h2 class="offer-title heading--secondary" style="margin-top: 2.4rem;">What we provide to our customers
-                </h2>
+            <div class="title-head ">
+                <div class="title">BEYOND THE BASICS</div>
+                <h2 class="heading--secondary  ">the Anatomy of Mastery</h2>
             </div>
             <div class="offer-img">
                 <img src="./assets/service/offer.png" alt="baber Image">
@@ -240,8 +249,9 @@
                     <img src="./assets/icons/curly.png" alt="Scisor image">
                 </div>
                 <div class="offer--box-content">
-                    <h3 class="offer-box-title heading--tertiary">Hair curly</h3>
-                    <p class="offer-box-desc description">Our talented specialist are ready to share their secrets.</p>
+                    <h3 class="offer-box-title heading--tertiary">Curl Resurrection</h3>
+                    <p class="offer-box-desc description">Hydration-focused techniques that enhance natural texture
+                        while fighting frizz</p>
                 </div>
             </div>
             <div class="offer-box">
@@ -249,8 +259,9 @@
                     <img src="./assets/icons/hairStyle.png" alt="Scisor image">
                 </div>
                 <div class="offer--box-content">
-                    <h3 class="offer-box-title heading--tertiary">Hairstyles</h3>
-                    <p class="offer-box-desc description">Our talented specialist are ready to share their secrets.</p>
+                    <h3 class="offer-box-title heading--tertiary">Style Engineering</h3>
+                    <p class="offer-box-desc description">Structural designs that complement bone structure and
+                        lifestyle demands</p>
                 </div>
             </div>
             <div class="offer-box">
@@ -258,8 +269,9 @@
                     <img src="./assets/icons/straight.png" alt="Scisor image">
                 </div>
                 <div class="offer--box-content">
-                    <h3 class="offer-box-title heading--tertiary">Straightener </h3>
-                    <p class="offer-box-desc description">Our talented specialist are ready to share their secrets.</p>
+                    <h3 class="offer-box-title heading--tertiary">Sleek Revolution </h3>
+                    <p class="offer-box-desc description">Health-first straightening therapies that preserve integrity
+                    </p>
                 </div>
             </div>
             <div class="offer-box">
@@ -267,19 +279,19 @@
                     <img src="./assets/icons/coloring.png" alt="Scisor image">
                 </div>
                 <div class="offer--box-content">
-                    <h3 class="offer-box-title heading--tertiary">Coloring</h3>
-                    <p class="offer-box-desc description">Our talented specialist are ready to share their secrets.</p>
+                    <h3 class="offer-box-title heading--tertiary">Chroma Adaptation</h3>
+                    <p class="offer-box-desc description">Skin-tone optimized color that grows out gracefully</p>
                 </div>
             </div>
         </section>
 
-        <section class=" appointment-section  ">
+        <section class=" appointment-section">
             <div class="center--div container grid grid--cols-2">
                 <div class="apointment-form">
                     <div class="appoint-title">
-                        <p class="title">book your slot</p>
+                        <p class="title">YOUR TRANSFORMATION BLUEPRINT</p>
                         <h2 class="heading--secondary">
-                            Hurry limited offer <br> book now !!
+                            Design Your Experience
                         </h2>
                     </div>
                     <form class="form-grid grid--cols-2" action="#" method="post">
@@ -308,12 +320,12 @@
                             <option value="17:00">5:00 PM</option>
                             <option value="18:00">6:00 PM</option>
                         </select>
-                        <textarea name="desc" id="" placeholder="How can we assist with you..."></textarea>
+                        <textarea name="desc" id="" placeholder="Describe your hair journey or inspiration"></textarea>
                         <div class="check-box">
                             <input type="checkbox" name="" id="check">
-                            <label for="check">Regular Update</label>
+                            <label for="check">Secure my craft journey</label>
                         </div>
-                        <button class="btn appoint-btn" type="submit">BOOK NOW</button>
+                        <button class="btn appoint-btn" type="submit">Secure Craft</button>
                     </form>
                 </div>
                 <div class=" appointment-image">
@@ -340,10 +352,24 @@
         </div>
         <div class="footer-container footer-page-navigation" style="text-align: center;">
             <h3 class="heading--tertiary">Scisors & Style</h3>
-            <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laborum hic
-                praesentium quasi doloribus sint, similique ratione perspiciatis. In eligendi numquam ducimus
-                consectetur dolorem, suscipit voluptatum recusandae! Impedit, qui dignissimos.</div>
-
+            <div class="description">A gender-neutral sanctuary where precision cutting meets personal narrative. We
+                reject one-size-fits-all beauty standards, instead crafting bespoke styles through biological
+                understanding and artistic intuition. Your hair's potential - unlocked.
+            </div>
+            <div class="redirect-media">
+                <div class="s-media-container">
+                    <img src="./assets/icons/fb.png" alt="" class="s-media">
+                </div>
+                <div class="s-media-container">
+                    <img src="./assets/icons/insta.png" alt="" class="s-media">
+                </div>
+                <div class="s-media-container">
+                    <img src="./assets/icons/twitter.png" alt="" class="s-media">
+                </div>
+                <div class="s-media-container">
+                    <img src="./assets/icons/wtsap.png" alt="" class="s-media">
+                </div>
+            </div>
         </div>
         <div class="footer-container footer-contact">
             <h3 class="heading--tertiary">
@@ -351,13 +377,12 @@
             </h3>
             <div class="contact-details">
                 <p class="description address">
-                    2972 Westheimer Rd. Santa Ana, Illinois 85486
-
+                    82 Lavelle Road, Indiranagar, Bengaluru, KA 560038
                 </p>
-                <p class="description email"> support@example.com
+                <p class="description email"> hello@scissorsandstyle.in
                 </p>
                 <p class="description number">
-                    + (084) 456-0789
+                    +91 98765 43210
                 </p>
             </div>
             <h3 class="heading--tertiary timing">
@@ -373,7 +398,7 @@
             </div>
         </div>
         <div class="footer-copyright">
-            &copy; Copyright 2023 <span>Scisors & Style</span>. All rights reserved.
+            &copy; Copyright 2023 <span class="redirect-home">Scisors & Style</span>. All rights reserved.
         </div>
         <img class="right-img" src="./assets/hero/flowerRight.png" alt="">
         <img class="left-img" src="./assets/hero/flowerLeft.png" alt="">
