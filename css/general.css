@@ -70,12 +70,13 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: .1rem;
+    margin-bottom: 1.8rem;
 }
 
 .description {
     font-size: 1.6rem;
     color: #575351;
-    width: 66rem;
+    /* width: 66rem; */
     line-height: 1.6;
 }
 
